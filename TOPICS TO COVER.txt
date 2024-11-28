@@ -1,0 +1,28 @@
+HTML : 
+Structure of html doc 
+Tables and forms 
+Links 
+Lists 
+Mouse events 
+
+CSS: 
+Box model 
+Positions 
+Pseudo classes 
+Selectors 
+Flexbox and grid 
+
+JavaScript: 
+Temporal dead zone 
+== &=== var, let, const 
+Null vs undefined vs nan 
+Scope , hoisting 
+Closure , callback 
+Arrow functions 
+Multiline strings and default parameters 
+Objects 
+Spread , rest , call, apply , bind 
+Map and filter 
+Callback hell and async , await 
+Promises and fetch api 
+Arrays and strings 

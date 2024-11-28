@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo selector</title>
+    <style>
+        h2::first-letter{
+            text-transform: capitalize;
+            font-size: 50px;
+            color: brown;
+        }
+        p::first-line{
+            font-size: 25px;
+            color:chocolate
+        }
+        h2::before{
+            content: "before element is used";
+        }
+        h2::after{
+            content: "after element is used";
+        }
+        h2::selection{
+            background-color: black;
+            color: white;
+        }
+     
+    </style>
+
+</head>
+<body>
+    <h2>this is a heading1</h2>
+    <h2>this is a heading2</h2>
+    <h2>this is a heading3</h2>
+    <h2>this is a heading4</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur necessitatibus similique eius? Architecto eos debitis sint nemo odit odio quod, doloribu fuga quidem eaque autem ut suscipit, inventore rem?</p>
+</body>
+</html>

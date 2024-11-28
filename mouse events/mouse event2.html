@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events 2</title>
+    <style>
+        #s1{
+            margin-left:35%;
+            margin-top:28%;
+        }
+        #p1{
+            display: block;
+        }
+        #p2{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <section id="s1">
+            <div class="div">
+                <div id="d1">Name<input type="text"><br><br></div>
+                <div id="d2"><button id="btn" onclick="button1()" ondblclick="button2()" onmouseover="button3()" onmouseout="button4()" onmouseleave="button5()">hover on me</button></div>    
+            </div>
+            <p id="p1" onmouseover="btn1()" onmouseout="btn2()">hover here</p>
+            <p id="p2">hidden text !</p>
+    </section>
+            <script>
+            function button1(){
+                document.getElementById("btn").style.backgroundColor="red";
+                document.getElementById('btn').innerText='single clicked';
+            }
+            function button2(){
+                document.getElementById("btn").style.backgroundColor='yellow';
+                document.getElementById('btn').innerText='doubled click';
+            }
+            function button3(){
+                document.getElementById("btn").style.color='grey';
+                document.getElementById("btn").innerText='click on me!';
+            }
+            function button4(){
+                document.getElementById("btn").style.color='black';
+                document.getElementById("btn").innerHTML='hover on me';
+            }
+            function button5(){
+                document.getElementById('btn').style.color='black';
+                document.getElementById('btn').style.backgroundColor='white';
+            }
+            function btn1(){
+                document.getElementById('p2').style.display='block';
+            }
+            function btn2(){
+                document.getElementById('p2').style.display='none';
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+div{
+    height: 50px;
+    width: 50px;
+    margin:10px;
+    text-align: center;
+    font-size: 2em;
+    background-color: violet;
+    border: 2px solid black;
+    border-radius: 500000000%;
+    padding: 25px;
+}
+#container{
+    display: flex;
+}

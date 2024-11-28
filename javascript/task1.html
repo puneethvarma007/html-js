@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <script src="task1.js"></script>
+    <form id="myForm">
+        <button>please fill all information</button><br><br>
+        <label for="text">enter your name:</label>
+        <input type="text" id="text" name="text">
+        <span id="nameError"></span>
+        <br><br>
+
+        <label for="number">enter your Number:</label>
+        <input type="text" id="number" name="number" >
+        <span id="numberError"></span>
+        <br><br>
+
+        <label for="email">enter your Email:</label>
+        <input type="email" id="email" name="email" >
+        <span id="emailError"></span>
+        <br><br>
+
+        <label for="date">enter a Date:</label>
+        <input type="date" id="date" name="date">
+        <span id="dateError"></span>
+        <br><br>
+
+        <label for="status1">Single</label>
+        <input type="checkbox" id="status1" name="status1" value="single" required><br>
+        <label for="status2">Married</label>
+        <input type="checkbox" id="status2" name="status2" value="married" required><br>
+        <span id="checkboxError"></span>
+        <br><br>
+
+
+        <label for="radio1">Male:</label>
+        <input type="radio" id="radio1" name="gender" value="male" required><br>
+        <label for="radio2">Female:</label>
+        <input type="radio" id="radio2" name="gender" value="female" required><br>
+        <span id="radioError"></span>
+        <br><br>
+
+        <label for="textarea">enter ur feedback</label><br>
+        <textarea id="textarea" name="textarea">
+        </textarea><br>   
+        <span id="messageError"></span>
+        <br><br>
+
+        <label for="select">Select your fav programming language:</label>
+        <select id="select" name="language">
+            <option value="html">1.html</option>
+            <option value="css">2.css</option>
+            <option value="js" selected>3.js</option>
+        </select>
+        <span id="selectError"></span>
+        <br><br>
+
+        <button type="button" onclick="handleSubmit()">Submit</button><br>
+        <span id="SubmitError"></span>
+
+    </form>
+    <script>
+        function handleSubmit(){
+            const form = document.getElementById('myForm');
+            const formData = new FormData(form);
+            const values = Object.fromEntries(formData.entries());
+            console.log(values);
+         }
+    </script>
+</body>
+</html>

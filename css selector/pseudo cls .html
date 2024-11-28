@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo cls</title>
+    <style>
+        a:link{
+            color: chartreuse;
+        
+        }
+        a:visited{
+            color: darkgoldenrod;
+        }
+        a:hover{
+            color:coral;
+            font-size:12ex;
+        }
+        a:active{
+            color: darkgreen;
+        }
+    
+        
+        
+        h1{
+            width: fit-content;
+            color:white;
+            background-color: grey;
+            margin: auto;
+        }
+        h1:hover{
+            
+            color: rgb(6, 42, 6);
+            width: fit-content;
+        }
+        h1:not(:hover){
+            color: aqua;
+        }
+        h1:nth-child(5n+1){
+            color: blue;
+        }
+
+        p {
+        display: none;
+        width: fit-content;
+        background-color: tomato;
+        padding: 20px;
+    }
+
+        div:hover p {
+        display: block;
+        }
+    </style>
+
+
+</head>
+<body>
+    <a href="https://adharvasoft.com/index.html" target="_blank">adharvasoft</a>
+
+    <h1>this is heading#1</h1>
+    <h1>this is heading#2</h1>
+    <h1>this is heading#3</h1>
+    <h1>this is heading#4</h1>
+    <h1>this is heading#5</h1>
+    <h1>this is heading#6</h1>
+    <h1>this is heading#7</h1>
+    <h1>this is heading#8</h1>
+    <h1>this is heading#9</h1>
+
+    <div><li>hover on tomato</li>
+        <p>red</p></div>
+
+</body>
+</html>

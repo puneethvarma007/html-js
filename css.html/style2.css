@@ -1,0 +1,10 @@
+#box{
+    border:solid 150px;
+    padding: 1.2em;
+}
+#tomato:hover{
+    color: rgb(255, 0, 0);
+}
+#orange:hover{
+    color: orange;
+}

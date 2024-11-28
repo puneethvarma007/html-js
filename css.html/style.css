@@ -1,0 +1,45 @@
+#p1,#p2{
+    text-align: center;
+    text-transform: capitalize;
+    font-family:fantasy;
+}
+#outer{
+     font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
+h1{
+    text-align: center;
+    width: 500px;
+    background-color: orangered;
+    color: aqua;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    
+    
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+header{
+    text-align:center;
+    color: aqua;
+    background-color: black;
+
+    padding-top :20px;
+    padding-bottom :20px;
+    padding-left :20px;
+    padding-right :20px;
+
+    border: 10px solid aqua;
+
+    margin:20px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+

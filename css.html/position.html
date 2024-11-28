@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+         #p4{
+            position: static;/* stactic position is a defualt position */
+            padding-left: 100px
+        }
+        #p2{
+            background-color: darkgray;
+            position:absolute; /* absolute position is fixed once it is assaigned it overlaps elements present arount it in 3-d(x,y,z axis) it doesnt follow the page it is fixed element. */
+            margin-top: 100px;;
+            margin-left: 100px;
+        }
+        #box1{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position:relative;/*relative position doesent over laps with any elements present near it  */
+            top: 50px;
+            left: 50px;
+            margin-left: 50px;
+        }
+        #box2{
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            position:relative;
+            bottom: 100px;
+            left: 100px;
+            margin-left: 50px;
+            
+        }
+        #d1{
+            background-color: cadetblue;
+            width: 100%;
+            height: 50px;
+            position: fixed;/*fixed position is used for search bars so when we scrool the website the search bar follow us to the bottom.*/
+        }
+        
+        #p1{
+            background-color: cornflowerblue;
+            position:sticky ; /* sticky position is same as fixed but it used for any elements to follow the scrool from top to bottom & as well as bottom to top*/
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">&reg;</div>
+    <h1>this is a heading</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quo quisquam aut, voluptas facilis maiores reprehenderit esse. Dolores, molestias assumenda error tempore quae, iure optio amet placeat itaque eum soluta!</p>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eum odit minima minus autem repellendus omnis dolores adipisci cum id officia consectetur! Nesciunt quos quia iure illo et autem sed.</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+    Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+    Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+        Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+        Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+            Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+            Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+                Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+                Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+   
+    <div id='box1'>this is box 1</div>
+    <div id="box2">this is box2</div>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+        Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+        Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+        <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+            Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+            Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+                Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+                Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore nemo amet soluta corrupti fuga alias. Voluptates omnis inventore iusto animi odit nisi beatae alias eius aliquam? Consectetur, corporis nulla.
+                    Ducimus nihil quaerat quod repellendus atque nisi a facilis corrupti. Quas earum provident doloremque cum saepe temporibus, quasi error illo expedita! Deserunt assumenda qui dolor porro deleniti iusto, ipsam quam!
+                    Voluptatem voluptatibus illo, ab voluptatum suscipit quis perferendis harum, fugiat dolores totam ad distinctio necessitatibus est, voluptate nulla doloribus aliquid officia beatae. Quae facilis fuga fugiat ea mollitia hic maiores?</p>
+</body>
+</html>

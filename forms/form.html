@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<body>
+    <form action="response.html" target="_blank">
+       <div>
+        username<input type="text" name="username" placeholder="user_name" required minlength="9" maxlength="20"
+        >
+    </div>
+        password<input type="password" name="password" placeholder="password"><br>
+        email<input type="email" placeholder="mail_id" title="ex:hello@gmail.com" name="email">
+        phone number:<input type="tel"><br>
+        bank details <input type="number"><br><br>
+         male: <input type="radio" name="gender">
+        female:<input type="radio" name="gender">
+        <br><input type="submit" value="register">
+        <input type="reset">
+        <input type="hidden"> <!--hidden tag doesnt visible on debugging it is used for javascrip file (back-end purposes)-->
+        <input type="color" title="select ur favouraite color">
+
+        <br><input type="button" value="click on register">
+        <br>languages known:
+        <br>english<input type="checkbox">
+        <br>telugu<input type="checkbox">
+        <br>hindi<input type="checkbox">
+        <br>kannada<input type="checkbox">
+        <br>tamil<input type="checkbox"><br>
+        <input type="range" title="range is 0 to 100">
+        <input type="date"><!--it display date  -->
+        <input type="file"><!--it display file box to insert a file in it -->
+        <input type="search" title="search bar" placeholder="search bar"><!--it submits the form directly -->
+        <input type="time"> <!-- it display time bar -->>
+        <input type="month"> <!-- it displays month and year only -->
+        <input type="datetime-local"><!-- commbination of both date and month-->
+        <input type="week" name="week"><!--display week and year -->
+        <input type="url" title=" website search bar"><!--it displays directly to action page -->
+
+        
+        <br><textarea cols="50" rows="10" name="address" id="">feedback</textarea> <!--  -->
+        <br><select name="languages" id="">
+            <option value="1" selected>english</option>
+            <option value="2">telugu</option>
+            <option value="3">kannada</option>
+            <option value="4">hindi</option>
+            </select>
+        
+        
+        
+        
+        </form>
+</body>
+</html>
+<!-- attributes for input tag <input attributes="">
+    1. name :by the help of name attribute the information in a tag is identified (like english-en is code name) stores to backend file like(.php,.py.nodejs files).
+    2. required : this attribute is used for to popup a must-fill option to fill information in it.
+    3. maxlength : this attribute sets maximmum value of digits in input tag.
+    4. minlength :this attribute sets minimmum value of digits in input tag.
+    5. value : this attribute sets a default value and information sends backend file.
+    6. max : ihis attribute is used to set maximum age limit in input="number" tag.
+    7. min : this attribute is used to set minimum age limit in input="number" tag.
+    8. step : this attribute is used for number type to jump the given values in step attribute.
+    9. disabled : 
+    10. size : this attribute is used to increase input tag size.
+    11. checked : this attribute is used in checkbox to display default check box.
+    12. readonly : this attribute is used for read only purpose.
+         
+    three tags in form:
+    1.<input type="12 attributes"></input>
+    2.<textarea cols="50" rows="10" name="address" id="">feedback</textarea> it is used for feedback.
+    3.<select name="languages">it display like box
+         <option>nafme display in screen</option>
+         <option>name display in screen</option>  
+    </select> 
+-->

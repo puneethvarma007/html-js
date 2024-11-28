@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="demo.js"></script>
+</head>
+<body>
+<span id="1" onclick="fun()" ondblclick="fun1()" onmouseover="fun2()" onmouseout="fun3()" onmouseleave="fun4()"><p>this is a paragraph</p></span>
+    <br><br>
+<script>
+    function fun(){
+        document.getElementById("1").style.backgroundColor="blue";
+        document.getElementById('1').innerHTML='this is a paragraph';
+    }
+    function fun1(){
+        document.getElementById("1").style.backgroundColor="green";
+    }
+    function fun2(){
+        document.getElementById("1").style.
+        color="red";
+    }
+    function fun3(){
+        document.getElementById("1").style.
+        color="black";
+    }
+    function fun4(){
+        document.getElementById('1').style.color='black';
+        document.getElementById('1').style.backgroundColor='white';
+
+    }
+
+</script>
+</body>
+</html>

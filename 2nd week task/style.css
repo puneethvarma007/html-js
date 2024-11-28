@@ -1,0 +1,199 @@
+/*changing default margin and padding */
+* {
+  margin:0;
+  padding: 0;
+}
+
+/* Body-style */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: grey;
+}
+
+/* Header-style */
+header {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* anchor-tag  */
+a{
+  text-decoration: none;
+  color: rgb(247, 238, 238);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo:hover{
+  color: aqua;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+   margin-right: 20px;
+ 
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; 
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero-section styles */
+.hero {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13, 123, 241);
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* About-section styles */
+.about {
+  padding: 50px 20px;
+  background-color: white;
+  color: rgb(51, 51, 51);
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Services-section styles */
+.services {
+  padding: 50px 20px;
+  background-color: rgb(248, 249, 250);
+  color: rgb(51, 51, 51);
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style-type: none;
+}
+
+.services ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Contact-section styles */
+.contact {
+  padding: 50px 20px;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* form-styles */
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button[type="submit"]:hover {
+  background-color: rgb(0, 86, 179);
+}
+
+.form-message {
+  margin-top: 10px;
+  color: rgb(136, 136, 136);
+}
+/* Footer-style */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}

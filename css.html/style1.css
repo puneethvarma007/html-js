@@ -1,0 +1,64 @@
+
+#h1{
+    text-align: center;
+    background-color: aqua;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    border: 15px solid black;
+    border-left: 15px dashed orangered;
+    border-right: 15px dashed orangered;
+    border-top: 15px dashed orangered;
+    border-bottom: 15px dashed orangered;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#p1{text-align: center;
+    background-color: orangered;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    border: 15px solid black;
+    border-left: 15px dashed aqua;
+    border-right: 15px dashed aqua;
+    border-top: 15px dashed aqua;
+    border-bottom: 15px dashed aqua;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#p2{
+    text-align: center;
+    height: 20;
+    background-color: orangered;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    border: 15px solid black;
+    border-left: 15px dashed aqua;
+    border-right: 15px dashed aqua;
+    border-top: 15px dashed aqua;
+    border-bottom: 15px dashed aqua;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+ 
+

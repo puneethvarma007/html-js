@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onclick="fun()" onmouseleave="fun1()">click on heading</h1>
+    <button id="btn" onmouseover="funn()" onclick="funn1()" ondblclick="funn2()" onmouseleave="funn3()">hover on me</button>
+    <script>
+        function fun(){
+            document.getElementById('h1').innerText='the heding is changed';
+            document.getElementById('h1').style.color='red';
+        }
+        function fun1(){
+            document.getElementById('h1').innerText='click on heading';
+            document.getElementById('h1').style.color='black';
+
+        }
+    </script>
+    <script>
+        function funn(){
+            document.getElementById('btn').innerText='single click me';
+            document.getElementById('btn').style.color='red';
+        }
+        function funn1(){
+            document.getElementById('btn').innerText='double click me';
+            document.getElementById('btn').style.color='blue';
+        }
+        function funn2(){
+            document.getElementById('btn').innerText='double click me';
+            document.getElementById('btn').style.color='green';
+        }
+        function funn3(){
+            document.getElementById('btn').innerHTML='hover on me';
+            document.getElementById('btn').style.color='black';
+        }
+    </script>
+</body>
+</html>

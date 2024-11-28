@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="buttonClick()" value="click">
+    <p id="p1">clicked:0</p>
+    <script>
+        //simple function we can call it only once no intitialization occurs.        
+        function buttonclicksecure(){
+             let p1 = -1;
+
+                function inner(){
+                p1 = p1 + 1;
+                let p = document.getElementById("p1");
+                p.innerText=`clicked:${p1}`;
+            }return inner;
+    }
+    buttonClick = buttonclicksecure()
+    buttonClick()
+        //closure are used to perfom a function task multiple times.
+    //     function buttonClick(){
+    //         let count=0;
+    //         return function inner(){
+    //         count++;
+    //         let p = document.getElementById("p1");
+    //     } button_1 = buttonClick()
+    //     p.innerText=`clicked:${count}`;
+  
+    // }
+       
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+//--------------------------------------------------------------------------
+// parameter function 
+// function addme(x){
+//     return function addition(y){
+//         return  x*y;
+//     }
+
+// }
+// const add3 = addme(1);
+// console.log(add3(11));
+// console.log(add3(15));
+//-------------------------------------------------
+// IIfe closure 
+// let counter =(function(){
+// 	let count = 0;
+// 	return function(){
+// 		count++;
+// 		return count;
+				
+// 	}
+// })();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+//-------------------------------------------------
+//loops closures 
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(function() {
+//         console.log(i);
+//     },2000);
+// }
+// for (var i = 0; i < 3; i++){
+//     (function(i){
+//     setTimeout(function() {
+//         console.log(i);
+//     }, 1000);
+// })(i);
+// }
+//--------------------------------------
+//module pattern 
+// const countermodule =(function(){
+//     let count = 0;
+//     return{
+//         increment: function(){
+//             count++;
+//             console.log(count);
+//         },
+//         reset: function(){
+//             count = 0;
+//             console.log('counter reset');
+//         }
+//     };
+// })();
+// countermodule.increment();
+// countermodule.increment();
+// countermodule.increment();
+// countermodule.increment();
+// countermodule.increment();
+// countermodule.increment();
+// countermodule.increment();
+// countermodule.reset();
+// countermodule.increment(); -->
